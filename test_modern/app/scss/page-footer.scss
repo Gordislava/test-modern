@@ -1,0 +1,30 @@
+.page-footer {
+  width: auto;
+  background-color: $text-color;
+}
+
+.page-footer__lists {
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-light;
+  transition: color 0.25s ease;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.page-footer__link:hover {
+  color: darken($color: $text-light, $amount: 10);
+  text-decoration: none;
+}
+
+.page-footer__info {
+  color: $text-light;
+  padding-top: 45px;
+}

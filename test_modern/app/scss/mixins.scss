@@ -1,0 +1,9 @@
+@mixin title {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 400;
+  color: $text-color;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+}

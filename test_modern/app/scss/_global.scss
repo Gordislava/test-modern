@@ -1,5 +1,30 @@
+@font-face {
+    font-weight: 700;
+    font-family: "Ubuntu";
+    font-style: normal;
+    src: url("../fonts/Ubuntu-Bold.woff") format("woff");
+    font-display: swap;
+  }
+
+@font-face {
+    font-weight: 400;
+    font-family: "Ubuntu";
+    font-style: normal;
+    src: url("../fonts/Ubuntu-Regular.woff") format("woff");
+    font-display: swap;
+	}
+	
+@font-face {
+    font-weight: 300;
+    font-family: "Raleway";
+    font-style: normal;
+    src: url("../fonts/Ubuntu-Light.woff") format("woff");
+    font-display: swap;
+  }
+
 ::placeholder {
-	color: #666;
+  color: #666;
+  opacity: 1;
 }
 
 ::selection {
@@ -11,20 +36,19 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 300;
 	font-family: $default-font;
 	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
+	color: $text-color;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: rgba(0,0,0,.25);
+  border-color: rgba(0,0,0,.25);
+  
 }
 
 .img-responsive {
@@ -36,10 +60,19 @@ body {
 	}
 }
 
-.text-center {
-	text-align: center;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-b, strong {
-	font-weight: bold;
+header, section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+

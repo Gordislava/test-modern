@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__link {
+  color: $text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  transition: color 0.25s ease;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: $accent;
+  text-decoration: none;
+}
+
+.menu-item--lang {
+  background-image: url('../img/russia.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 20px 14px;
+  cursor: pointer;
+}
+
+.menu-item--lang-active {
+  background-image: url("../img/britain.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 20px 14px;
+}
+
+.menu-item--lang .menu__link {
+  color: transparent;
+}
