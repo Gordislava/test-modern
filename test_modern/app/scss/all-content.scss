@@ -6,3 +6,165 @@
   padding: 0;
   padding-bottom: 50px;
 }
+
+.all-content {
+  position: relative;
+}
+
+.all-content::after {
+  position: absolute;
+  content: "";
+  width: 24%;
+  height: 1px;
+  background-color: $bgr-dark;
+  top: 113px;
+  right: 1px;
+  z-index: 10;
+}
+
+.all-content::before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 1px;
+  background-color: $bgr-dark;
+  top: 271px;
+  right: 1px;
+  z-index: 10;
+}
+
+.all-content__line {
+  position: absolute;
+  display: inline-block;
+  width: 14%;
+  height: 1px;
+  right: 0;
+  top: 506px;
+  background-color: $bgr-dark;
+  color: $bgr-dark;
+  border: none;
+}
+
+@media (max-width: 1920px) {
+  .all-content::after {
+    width: 30%;
+  }
+
+  .all-content::before {
+    width: 31%;
+  }
+
+  .all-content__line {
+    width: 22%;
+  }
+}
+
+@media (max-width: 1730px)  {
+  .all-content::after {
+    width: 27%;
+  }
+
+  .all-content::before {
+    width: 26%;
+  }
+
+  .all-content__line {
+    width: 17%;
+  }
+}
+
+@media (max-width: 1730px)  {
+  .all-content::after {
+    width: 23%;
+  }
+
+  .all-content::before {
+    width: 24%;
+  }
+
+  .all-content__line {
+    width: 14%;
+  }
+}
+
+@media (max-width: 1390px)  {
+  .all-content__line {
+    width: 12%;
+  }
+}
+
+@media (max-width: 1355px)  {
+  .all-content::after {
+    width: 20%;
+  }
+
+  .all-content::before {
+    width: 21%;
+  }
+
+  .all-content__line {
+    width: 10%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .all-content__line {
+    width: 8%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .all-content::after {
+    width: 22%;
+  }
+
+  .all-content::before {
+    width: 23%;
+  }
+
+  .all-content__line {
+    top: 547px;
+    width: 10%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .all-content::after {
+    width: 20%;
+  }
+
+  .all-content::before {
+    width: 21%;
+  }
+
+  .all-content__line {
+    top: 547px;
+    width: 7%;
+  }
+}
+
+@media (max-width: 1075px) {
+  .all-content::after {
+    width: 17%;
+  }
+
+  .all-content::before {
+    width: 18%;
+  }
+
+  .all-content__line {
+    top: 547px;
+    width: 4%;
+  }
+}
+
+@media (max-width: 990px) {
+  .all-content::after,
+  .all-content::before,
+  .all-content__line,
+  .right-column::before,
+  .right-column::after {
+    display: none;
+  }
+
+}

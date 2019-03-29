@@ -30,8 +30,7 @@
   border-bottom-right-radius: 8px; 
 }
 
-.article__title
- {
+.article__title {
   font-size: 22px;
   line-height: 24px;
   padding: 0;
@@ -56,6 +55,10 @@
   margin-bottom: 12px;
 }
 
+.article__descr a {
+  color: $accent;
+}
+
 .article__tags-item {
   color: $text-light;
   text-transform: uppercase;
@@ -63,9 +66,16 @@
 
 .article__tags-list {
   display: flex;
+  flex-wrap: wrap;
   
 }
 
 .article__tags-item {
   margin-right: 20px;
+}
+
+@media (max-width: 990px) {
+  .article__img {
+    margin-bottom: 15px;
+  }
 }

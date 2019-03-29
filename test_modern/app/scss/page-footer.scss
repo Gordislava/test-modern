@@ -16,7 +16,7 @@
   color: $text-light;
   transition: color 0.25s ease;
   display: inline-block;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .page-footer__link:hover {
@@ -27,4 +27,51 @@
 .page-footer__info {
   color: $text-light;
   padding-top: 45px;
+  text-align: right;
+}
+
+.page-footer__info img {
+  padding-bottom: 25px;
+}
+
+.page-footer__info p {
+  margin: 0;
+  padding: 0;
+}
+
+.social_list {
+  display: flex;
+  margin-top: 40px;
+}
+
+.social__item {
+  margin-left: 10px;
+  transition: opacity 0.25s ease;
+}
+
+.social__item:hover {
+  opacity: 0.8;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 575px) {
+  .page-footer__lists {
+    justify-content: center;
+  }
+
+  .page-footer__lists--first {
+    margin-right: 50px;
+  }
+
+  .page-footer__info {
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
 }

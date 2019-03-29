@@ -4,10 +4,24 @@
   position: relative;
 }
 
+.breadcrums::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  right: 0;
+  background-color: $bgr-dark;
+}
+
+
 .breadcrums__list {
   display: flex;
   padding-left: 15px;
   width: auto;
+  background-color: $bgr-color;
+  position: relative;
+  z-index: 10;
 }
 
 
